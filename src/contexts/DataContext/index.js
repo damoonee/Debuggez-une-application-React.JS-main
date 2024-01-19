@@ -20,6 +20,7 @@ export const api = {
 export const DataProvider = ({ children }) => {
   const [error, setError] = useState(null);
   const [data, setData] = useState(null);
+  
   // Ajouté pour stocker l'événement le plus récent en fonction de la date
   const [last, setLast] = useState(null);
 

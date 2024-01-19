@@ -16,9 +16,17 @@ const Select = ({
   const [value, setValue] = useState();
   const [collapsed, setCollapsed] = useState(true);
   
+  // Fonction pour changer la valeur sélectionner du menu déroulant
   const changeValue = (newValue) => {
+
+    // Déclencher la fonction onChange passée en tant que propriété 
+    // et lui transmettre la nouvelle valeur pour informer le parent du changement
     onChange(newValue);
+
+    // Mettre à jour la valeur locale du composant
     setValue(newValue);
+
+     // Mettre à jour l'état de collapsation du menu déroulant
     setCollapsed(true);
   };
   return (
